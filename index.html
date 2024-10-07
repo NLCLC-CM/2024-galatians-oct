@@ -10,6 +10,13 @@
     --bg-color: white;
     --text-color: black;
     --table-border-color: black;
+    --href-color: blue;
+
+    --faith-color: blue;
+    --law-color: magenta;
+    --love-color: red;
+    --circ-color: lavender;
+    --free-color: green;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -17,6 +24,13 @@
       --bg-color: #1e1e2e;
       --text-color: #cdd6f4;
       --table-border-color: #9399b2;
+      --href-color: #74c7ec;
+
+      --faith-color: #89dceb;
+      --law-color: #f9e2af;
+      --love-color: #f38ba8;
+      --circ-color: #b4befe;
+      --free-color: #a6e3a1;
     }
   }
 
@@ -24,6 +38,14 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     font-size: 16px;
+  }
+
+  a {
+    color: var(--href-color);
+  }
+
+  a:visited {
+    color: var(--href-color);
   }
 
   h3 {
@@ -84,19 +106,63 @@
       width: calc((100% * 23 / 24) / 3);
     }
   }
+
+  .repeating {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .repeating.faith {
+    color: var(--faith-color);
+  }
+
+  .repeating.law {
+    color: var(--law-color);
+  }
+
+  .repeating.love {
+    color: var(--love-color);
+  }
+
+  .repeating.circ {
+    color: var(--circ-color);
+  }
+
+  .repeating.free {
+    color: var(--free-color);
+  }
   </style>
 
   <main>
     <article>
       <h3>Galatians 5:1-15 prestudy material for 2024-10-xx</h3>
       <hr>
+      <p><strong>Possible goals</strong></p>
+
+      <ul>
+        <li>To make us think about the things that "[hinder us] from obeying the truth" (v7 ESV)</li>
+        <li>To understand that "faith working through love" is the only requirement for salvation (v6 ESV)</li>
+        <li></li>
+      </ul>
+
       <p><strong>Possible ice breaking questions</strong></p>
 
-      <p><strong>Possible main points</strong></p>
+      <ul>
+        <li>Give an example of a well-known idiom</li>
+        <li>Give an example of something that can stop you from going to church</li>
+        <li></li>
+      </ul>
+
+      <p><strong>Possible application questions</strong></p>
+
+      <ul>
+        <li>Can you identify 1 or 2 obstacles in your life that "hinder you" from obeying the truth? (v7)</li>
+        <li></li>
+      </ul>
 
       <p><strong>Structure</strong></p>
 
-      <p>Exhortation to Christian Living 信徒應有的生活 (5:1-6:10)</p>
+      <p>Exhortation to Christian Living (5:1-6:10 NAB)</p>
 
       <ul>
         <li><strong>5:1-6</strong> Freedom instead of slavery</li>
@@ -126,25 +192,34 @@
           <tr>
             <td>5:1</td>
             <td>
-              基督釋放了我們，為使我們得自由。所以要站穩了，不要再被奴隸的軛挾制。
+              基督釋放了我們，為使我們得<span class="repeating free">自由</span>。所以要站穩了，不要再被奴隸的<u>軛</u>挾制。
             </td>
             <td>
-              Christ has set us free to live a free life. So take your stand! Never again let anyone put
-              a harness of slavery on you.
+              Christ has set us <span class="repeating free">free</span> to live a <span class="repeating free">free</span>
+              life. So take your stand! Never again let anyone put a <u>harness</u> of slavery on you.
             </td>
-            <td></td>
+            <td>
+              <p>
+                <u>軛</u>: Greek <em>zugos</em>; according to a blogger, this could be a snide reference
+                to <em>zugot</em>, a period of time (170 BCE - 30 CE) where Jews had pairs of religious
+                leaders. Cross reference to
+                <a href="https://www.biblegateway.com/passage/?search=matt%2011%3A28-29&version=NIV">Matthew 11:28-29</a>.
+              </p>
+            </td>
           </tr>
 
           <tr>
             <td>5:2</td>
             <td>
-              我—保羅告訴你們，你們若受割禮，基督就對你們無益了。
+              我—保羅告訴你們，你們若<span class="repeating circ">受割禮</span>，基督就對你們無益了。
             </td>
             <td rowspan="2">
-              I am emphatic about this. The moment any one of you submits to circumcision or any other
-              rule-keeping system, at that same moment Christ’s hard-won gift of freedom is squandered.
-              I repeat my warning: The person who accepts the ways of circumcision trades all the
-              advantages of the free life in Christ for the obligations of the slave life of the law.
+              I am emphatic about this. The moment any one of you submits to
+              <span class="repeating circ">circumcision</span> or any other rule-keeping system, at that
+              same moment Christ’s hard-won gift of <span class="repeating free">freedom</span> is squandered. I repeat my
+              warning: The person who accepts the ways of <span class="repeating circ">circumcision</span>
+              trades all the advantages of the <span class="repeating free">free</span> life in Christ
+              for the obligations of the slave life of the law.
             </td>
             <td></td>
           </tr>
@@ -152,7 +227,8 @@
           <tr>
             <td>5:3</td>
             <td>
-              我再指著凡受割禮的人確實地說，他有義務遵行全部的律法。
+              我再指著凡<span class="repeating circ">受割禮</span>的人確實地說，他有義務遵行全部
+              的<span class="repeating law">律法</span>。
             </td>
             <td></td>
           </tr>
@@ -160,14 +236,15 @@
           <tr>
             <td>5:4</td>
             <td>
-              你們這要靠律法稱義的是與基督隔絕，從恩典中墜落了。
+              你們這要靠<span class="repeating law">律法</span>稱義的是與基督隔絕，從恩典中墜落了。
             </td>
             <td rowspan="3">
               I suspect you would never intend this, but this is what happens. When you attempt to live by
               your own religious plans and projects, you are cut off from Christ, you fall out of grace.
               Meanwhile we expectantly wait for a satisfying relationship with the Spirit. For in Christ,
               neither our most conscientious religion nor disregard of religion amounts to anything. What
-              matters is something far more interior: faith expressed in love.
+              matters is something far more interior: <span class="repeating faith">faith</span> expressed
+              in <span class="repeating love">love</span>.
             </td>
             <td></td>
           </tr>
@@ -175,7 +252,7 @@
           <tr>
             <td>5:5</td>
             <td>
-              至於我們，我們是靠著聖靈，憑著信心，等候所盼望的義。
+              至於我們，我們是靠著聖靈，憑著<span class="repeating faith">信心</span>，等候所盼望的義。
             </td>
             <td></td>
           </tr>
@@ -183,7 +260,9 @@
           <tr>
             <td>5:6</td>
             <td>
-              因為在基督耶穌裏，受割禮不受割禮都沒有功效，惟獨使人發出仁愛的信心才有功效。
+              因為在基督耶穌裏，<span class="repeating circ">受割禮不受割禮</span>都沒有功效，惟獨使人
+              發出<span class="repeating love">仁愛</span>的<span class="repeating faith">信心</span>才
+              有功效。
             </td>
             <td></td>
           </tr>
@@ -231,14 +310,16 @@
           <tr>
             <td>5:11</td>
             <td>
-              弟兄們，我若仍舊傳割禮，為甚麼還受迫害呢？若是這樣，十字架絆倒人的地方就沒有了。
+              弟兄們，我若仍舊傳<span class="repeating circ">割禮</span>，為甚麼還受迫害呢？若是這樣，十字架絆倒人的地方就沒有了。
             </td>
             <td rowspan="2">
-              As for the rumor that I continue to preach the ways of circumcision (as I did in those
-              pre-Damascus Road days), that is absurd. Why would I still be persecuted, then? If I were
-              preaching that old message, no one would be offended if I mentioned the Cross now and
-              then—it would be so watered-down it wouldn’t matter one way or the other. Why don’t these
-              agitators, obsessive as they are about circumcision, go all the way and castrate themselves!
+              As for the rumor that I continue to preach the ways of
+              <span class="repeating circ">circumcision</span> (as I did in those pre-Damascus Road days),
+              that is absurd. Why would I still be persecuted, then? If I were preaching that old message,
+              no one would be offended if I mentioned the Cross now and then—it would be so watered-down
+              it wouldn’t matter one way or the other. Why don’t these agitators, obsessive as they are
+              about <span class="repeating circ">circumcision</span>, go all the way and castrate
+              themselves!
             </td>
             <td></td>
           </tr>
@@ -254,16 +335,17 @@
           <tr>
             <td>5:13</td>
             <td>
-              弟兄們，你們蒙召是要得自由；只是不可把這自由當作放縱情慾的機會，總要用愛心互相服侍。
+              弟兄們，你們蒙召是要得<span class="repeating free">自由</span>；只是不可把這<span class="repeating free">自由</span>當作放縱情慾的機會，
+              總要用<span class="repeating love">愛心</span>互相服侍。
             </td>
             <td rowspan="3">
-              It is absolutely clear that God has called you to a free life. Just make sure that you don’t
-              use this freedom as an excuse to do whatever you want to do and destroy your freedom.
-              Rather, use your freedom to serve one another in love; that’s how freedom grows. For
-              everything we know about God’s Word is summed up in a single sentence: Love others as you
-              love yourself. That’s an act of true freedom. If you bite and ravage each other, watch
-              out—in no time at all you will be annihilating each other, and where will your precious
-              freedom be then?
+              It is absolutely clear that God has called you to a <span class="repeating free">free</span> life. Just make sure that you don’t
+              use this <span class="repeating free">freedom</span> as an excuse to do whatever you want to do and destroy your <span class="repeating free">freedom</span>.
+              Rather, use your <span class="repeating free">freedom</span> to serve one another in <span class="repeating love">love</span>;
+              that’s how <span class="repeating free">freedom</span> grows. For everything we know about God’s Word is summed up in a single
+              sentence: Love others as you <span class="repeating love">love</span> yourself. That’s an
+              act of true <span class="repeating free">freedom</span>. If you bite and ravage each other, watch out—in no time at all you will
+              be annihilating each other, and where will your precious <span class="repeating free">freedom</span> be then?
             </td>
             <td></td>
           </tr>
@@ -271,7 +353,7 @@
           <tr>
             <td>5:14</td>
             <td>
-              因為全部律法都包括在「愛鄰如己」這一句話之內了。
+              因為全部<span class="repeating law">律法</span>都包括在<span class="repeating love">「愛鄰如己」</span>這一句話之內了。
             </td>
             <td></td>
           </tr>
