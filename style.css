@@ -103,6 +103,10 @@ table caption {
     font-weight: bold;
 }
 
+.answer {
+    font-style: italic;
+}
+
 .repeating {
     cursor: pointer;
     font-weight: bold;
